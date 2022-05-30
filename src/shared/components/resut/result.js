@@ -26,7 +26,7 @@ export const Result =()=>{
                 <tr key={result.name}>
                     <td style={{color: 'white'}}>{index +1}</td>
                     <td style={{color: 'white'}}>{result.name}</td>
-                    <td style={{color: 'white'}}>{result.awnser}</td>
+                    <td style={{color: 'white'}}>{result.answer}</td>
                 </tr>))}
                 </tbody>
             </table>
