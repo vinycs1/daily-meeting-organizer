@@ -1,24 +1,25 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-import { sortAwnsers } from '../../shared/sorter'
-import {members} from '../../shared/resources/users'
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { sortAnswers } from '../../shared/sorter';
+import { members } from '../../shared/resources/users';
+
 type Data = any
 
-let anwsers: Record<string, string> = {}
+let answers: Record<string, string> = {};
 
 export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
+    req: NextApiRequest,
+    res: NextApiResponse<Data>,
 ) {
-  if (req.method === 'POST') {
-    anwsers[req.body.userId] = req.body.anwser
+    if (req.method === 'POST') {
+        answers[req.body.userId] = req.body.anwser;
 
-    return res.status(201).json(req.body.anwser)
+        return res.status(201).json(req.body.anwser);
 
-  } else {
+    } else {
 
-    console.log(anwsers)
-    res.status(200).json(sortAwnsers(members, anwsers))
-  }
+        console.log(answers);
+        res.status(200).json(sortAnswers(members, answers));
+    }
 
 }
 
