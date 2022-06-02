@@ -16,9 +16,7 @@ export default function handler(
         return res.status(201).json(req.body.anwser);
 
     } else {
-
-        console.log(answers);
-        res.status(200).json(sortAnswers(members, answers));
+        res.status(200).json(sortAnswers(answers));
     }
 
 }
