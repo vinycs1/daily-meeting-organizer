@@ -4,7 +4,7 @@ export function sortAnswers(answers: Record<string, string>) {
 
      return Object.keys(answers)
         .map(membersId => ({
-            name: members[membersId],
+            name: members[membersId] as string,
             answer: answers[membersId],
         })).sort(alphabeticallySorter)
 
