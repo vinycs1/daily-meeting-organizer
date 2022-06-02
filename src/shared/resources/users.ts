@@ -1,4 +1,4 @@
-export const members = {
+export const members: Record<string, string> = {
     '1': "Lucas Joaquim",
     '2': "Marcus Maninho",
     '3': "Miguel Oliveira",
@@ -9,4 +9,4 @@ export const members = {
     '16': "Intruso 1",
     '17': "Intruso 2",
     '18': "Duplamente Intruso",
-};
+} ;
