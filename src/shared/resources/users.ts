@@ -1,5 +1,5 @@
 export const members: Record<string, string> = {
-    '1': "Lucas Joaquim",
+    '1': "Aramys Matos",
     '2': "Marcus Maninho",
     '3': "Miguel Oliveira",
     '5': "Pedro Intruso 1 Campos",
