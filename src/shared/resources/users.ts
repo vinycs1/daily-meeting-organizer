@@ -2,7 +2,7 @@ export const members: Record<string, string> = {
     '1': "Ara(mys/mito/boy) Matos",
     '6': "SaFabão Filho",
     '2': "Marcus Maninho",
-    '3': "Miguel Oliveira",
+    '3': "Miguel Jesus do Sul",
     '5': "Pedro Intruso 1 Campos",
     '8': "Rafael Ferrari",
     '9': "Raphael Carvalho",
