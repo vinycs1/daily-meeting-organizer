@@ -1,18 +1,25 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react';
 import Button from '@atlaskit/button/standard-button';
 import axios from 'axios'
 
 export const Result =()=>{
     const [result, setResult] = useState([])
 
-    const  showResult = async () =>{
-       await axios.get(`/api/anwsers/`)
-            .then(res => setResult(res.data))
-    }
+
+    useEffect(()=>{
+        const intervalId = setInterval(()=>{
+            axios.get(`/api/anwsers/`)
+                .then(res => setResult(res.data))
+                .catch((e)=> console.error(e))
+        },1000)
+
+        return () => clearInterval(intervalId);
+    },[setResult])
+
+
 
     return (
         <div style={{marginTop: '20px'}}>
-             <Button appearance="primary" onClick={showResult} >Go!</Button>
             <table>
             <thead>
                 <tr>
