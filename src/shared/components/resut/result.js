@@ -5,21 +5,14 @@ import axios from 'axios'
 export const Result =()=>{
     const [result, setResult] = useState([])
 
-
-    useEffect(()=>{
-        const intervalId = setInterval(()=>{
-            axios.get(`/api/anwsers/`)
-                .then(res => setResult(res.data))
-                .catch((e)=> console.error(e))
-        },1000)
-
-        return () => clearInterval(intervalId);
-    },[setResult])
-
-
+    const  showResult = async () =>{
+        await axios.get(`/api/anwsers/`)
+            .then(res => setResult(res.data))
+    }
 
     return (
         <div style={{marginTop: '20px'}}>
+            <Button appearance="primary" onClick={showResult} >Go!</Button>
             <table>
             <thead>
                 <tr>
