@@ -1,6 +1,6 @@
 export const members: Record<string, string> = {
     '1': "Ara(mys/mito/boy) Matos",
-    '2: "Ana Sofia",
+    '2': "Ana Sofia",
     '3': "SaFabão Filho",
     '4': "Marcus Maninho",
     '5': "Miguel Jesus do Sul",
