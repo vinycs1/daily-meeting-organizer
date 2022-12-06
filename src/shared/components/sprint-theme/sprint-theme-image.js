@@ -14,7 +14,7 @@ export const SprintThemeImage = () => {
     return (
       
         <img
-            src={"https://diegochagas.com/saint-seiya-api/assets/cloth-schemes/athena-saints/gemini-saga.jpg"}
+            src={"https://i.pinimg.com/736x/f8/a2/85/f8a2859a28bd4e4f473907f5ff94b8da.jpg"}
             height="400px"
             width="400px"
             alt={cavaleiro?.name}
