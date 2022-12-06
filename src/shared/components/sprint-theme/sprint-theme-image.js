@@ -15,8 +15,8 @@ export const SprintThemeImage = () => {
       
         <img
             src={"https://i.pinimg.com/736x/f8/a2/85/f8a2859a28bd4e4f473907f5ff94b8da.jpg"}
-            height="400px"
-            width="400px"
+            height="401px"
+            width="401px"
             alt={cavaleiro?.name}
         />
     );
