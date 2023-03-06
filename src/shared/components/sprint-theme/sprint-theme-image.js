@@ -14,9 +14,9 @@ export const SprintThemeImage = () => {
     return (
       
         <img
-            src={"https://diegochagas.com/saint-seiya-api/assets/cloth-schemes/athena-saints/gemini-saga.jpg"}
-            height="400px"
-            width="400px"
+            src={"https://pbs.twimg.com/media/D9iLBgcXsAAxRJS.jpg"}
+            height="350px"
+            width="350px"
             alt={cavaleiro?.name}
         />
     );
