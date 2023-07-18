@@ -12,7 +12,8 @@ export const members: Record<string, string> = {
     '10': "Vinicius Castro",
     '11': "Will",
     '12': "Talita Vieira",
-    '13': "Intruso 1",
-    '14': "Intruso 2",
+    '13': "Don Diego de la Vega",
+    '14': "Intruso 1",
     '15': "Duplamente Intruso",
+    '16': "Duplamente e um cadinho a mais Intruso",
 } ;
