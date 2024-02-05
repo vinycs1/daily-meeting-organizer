@@ -14,7 +14,7 @@ export const members: Record<string, string> = {
     '14': "Eduardo Resser",
     '15': "Roberto Junior",
     '16': "Pedro Vido",
-    '17': "Erick Pimentel",
+    '17': "Erick Eloi",
     '25': "Intruso 1",
     '26': "Duplamente Intruso",
     '27': "Duplamente e um cadinho a mais Intruso",
